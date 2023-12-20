@@ -17,7 +17,7 @@ const Header = () => {
     { to: "/contact", text: "<Contact/>" },
   ];
 
-  const commonStyle = "mx-5  block lg:!flex my-3";
+  const commonStyle = "mx-5  block lg:!flex my-3 ";
   const activeStyle = "text-[#064789] " + commonStyle;
   const inactiveStyle = "text-[#427AA1] " + commonStyle;
   return (
@@ -62,10 +62,10 @@ const Header = () => {
       <img src='/ham.svg' alt='' className='' />
       </button>
     </div>
-    {/* ${menu?"right-24":"right-0"} */}
-    <div className={`h-full bg-white ${menu ? "translate-x-0" : "translate-x-full"}   transition-transform lg:hidden duration-700 text-black fixed top-0 w-full `}>
-      <button onClick={()=>setMenu(false)}>close</button>
-      <nav>
+
+    <div className={`h-full p-5 flex justify-between  bg-white ${menu ? "translate-x-0" : "translate-x-full"}   transition-transform lg:hidden duration-700 text-black fixed top-0 w-full `}>
+     
+      <nav className='w-[200px]'>
       {navLinks.map((link, index) => (
     <NavLink
       key={index}
@@ -77,6 +77,8 @@ const Header = () => {
     </NavLink>
   ))}
       </nav>
+        <img src='/close.svg' onClick={()=>setMenu(false)} alt='' className='w-20 h-20 mt-1' />
+    
     </div>
     </div>
     </>

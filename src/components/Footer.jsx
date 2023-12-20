@@ -5,8 +5,13 @@ const Footer = () => {
   return (
     <div className='lg:flex justify-between items-center lg:px-20 py-10'>
         <div>
+        {/* <div className='hidden lg:block'>
+            <Link to='/'  className='bg-gradient-to-r from-[#427AA1] to-[#064789] p-4 rounded-2xl text-white'>{`Resume`}</Link>
+        </div> */}
         <div className='hidden lg:block'>
-            <Link to='/'  className='bg-gradient-to-r from-[#427AA1] to-[#064789] p-4 rounded-2xl text-white'>{`<Abhay/>`}</Link>
+            <a href='/resume.pdf' download className='bg-gradient-to-r from-[#427AA1] to-[#064789] p-4 rounded-2xl text-white'>
+            {`Download Resume`}
+             </a>
         </div>
         </div>
         <div className='lg:flex justify-between items-center gap-5 text-center lg:text-left'>
