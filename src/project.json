@@ -1,0 +1,35 @@
+{
+    "project1": {
+      "image": "/project/linkShare.png",
+      "title": "Link Sharing App - A Full Stack Project",
+      "description": "Introducing our Link Sharing App—effortlessly share and manage links with a modern interface. Powered by ReactJS, Tailwind CSS, Vite, Appwrite, Redux Toolkit, React Router DOM, and Material UI for a seamless digital experience.",
+      "tech-stack": ["Reactjs", "Tailwind CSS", "Redux-Toolkit","Appwrite"],
+      "livelink": "https://link-app-fm.vercel.app/",
+      "gitlink": "https://github.com/abhay0480-eng/link-app-fm"
+    },
+    "project2": {
+      "image": "/project/quiz.png",
+      "title": "Quiz App project",
+      "description": "Discover a dynamic quiz experience! Our Responsive Quiz App, built with React.js, Context API, and react-router-6, offers seamless navigation, real-time feedback, and customizable categories. Challenge yourself, track scores, and enjoy an intuitive interface. Let the quizzes begin!",
+      "tech-stack": ["Reactjs", "Tailwind CSS", "Redux-Toolkit", "React-Router"],
+      "livelink": "https://quiz-app-fm.vercel.app/",
+      "gitlink": "https://github.com/abhay0480-eng/quiz-app-fm"
+    },
+    "project3": {
+      "image": "/project/bill.png",
+      "title": "A Responsive Bill Splitter App",
+      "description": "Meet the Responsive Bill Splitter: a chic app blending React and Tailwind CSS for seamless bill sharing. With real-time calculations and sleek design, it's the perfect combo of style and functionality. Split bills effortlessly, anywhere, anytime.",
+      "tech-stack": ["Reactjs", "Tailwind CSS"],
+      "livelink": "https://bill-splitter-fm.vercel.app/",
+      "gitlink": "https://github.com/abhay0480-eng/bill-splitter-fm"
+    },
+    "project4": {
+        "image": "/project/addCart.png",
+        "title": "Add to cart",
+        "description": "Experience seamless online shopping with our ReactJS, Tailwind, and Firebase-powered Add to Cart app. Enjoy an intuitive interface, responsive design, and real-time updates for a secure and visually appealing shopping journey. Elevate your online retail experience today!",
+        "tech-stack": ["Reactjs", "Tailwind CSS","Firebase"],
+        "livelink": "https://addtocart-abhay.netlify.app/",
+        "gitlink": "#"
+      }
+  }
+  
