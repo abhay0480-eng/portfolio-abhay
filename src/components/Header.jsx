@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
 
+
+
   const [menu, setMenu] = useState(false)
+
+
+ 
   const navLinks = [
     { to: "/", text: "<Home/>" },
     { to: "/about", text: "<About/>" },
@@ -17,7 +22,7 @@ const Header = () => {
   const inactiveStyle = "text-[#427AA1] " + commonStyle;
   return (
     <>
-    <div className='flex justify-between items-center px-4 lg:px-20 py-5 shadow-sm'>
+    <div className='flex justify-between items-center px-4 lg:px-20 py-5 shadow-sm '>
     <div className=''>
       <Link to='/'  className=' p-4 rounded-2xl text-[#064789] flex items-center gap-5'>
       <img src="/profile.png" alt='' className='w-10' />
@@ -58,7 +63,7 @@ const Header = () => {
       </button>
     </div>
     {/* ${menu?"right-24":"right-0"} */}
-    <div className={`h-full bg-white ${menu?"-right-[10%]":"-right-full "} lg:hidden duration-700 text-black absolute top-0 w-full `}>
+    <div className={`h-full bg-white ${menu ? "translate-x-0" : "translate-x-full"}   transition-transform lg:hidden duration-700 text-black fixed top-0 w-full `}>
       <button onClick={()=>setMenu(false)}>close</button>
       <nav>
       {navLinks.map((link, index) => (
