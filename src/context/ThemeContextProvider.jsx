@@ -4,7 +4,7 @@ import ThemeContext from "./ThemeContext";
 
 
 const ThemeContextProvider = ({children})=>{
-    const [theme,setTheme] = useState(true)
+    const [theme,setTheme] = useState(false)
     return(
         <ThemeContext.Provider value={{theme,setTheme}}>
             {children}
