@@ -10,6 +10,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #EBF2FA;
+    /* background-image: url('/bgclr.jpg'); */
 }
 h1{
     color: #427AA1;

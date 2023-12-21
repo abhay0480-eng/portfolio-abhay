@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Paragraph from '../components/Paragraph'
 import Heading from '../components/Heading'
 import Badge from '../components/Badge'
+import ThemeContext from '../context/ThemeContext'
 
 const About = () => {
+  const {theme} = useContext(ThemeContext)
+
   return (
     <>
-    <div className='lg:px-24 px-5'>
+    <div className={`lg:px-24 px-5 ${theme?"bg-[#064789]":"bg-[#EBF2FA]"}`}>
       <Heading className=" text-center lg:text-left">About</Heading>
-      <Paragraph className=" text-center lg:text-left">🚀 Experienced and creative Frontend Developer with <span className='text-[#064789] font-bold'>2.7 years</span>  in  <span className='text-[#064789] font-bold'>React.js</span> and <span className='text-[#064789] font-bold'>Tailwind CSS</span> . Passionate about crafting visually stunning and responsive user interfaces. Skilled in component-based architecture, state management <span className='text-[#064789] font-bold'>(Redux or Zustand)</span>, and <span className='text-[#064789] font-bold'>API integration</span>. Let's collaborate to bring innovative and seamless digital experiences to life! 💻✨</Paragraph>
+      <Paragraph className=" text-center lg:text-left">🚀 Experienced and creative Frontend Developer with <span className={`${!theme?"text-[#064789]":"text-[#EBF2FA]"} font-bold`}>2.7 years</span>  in  <span className={`${!theme?"text-[#064789]":"text-[#EBF2FA]"} font-bold`}>React.js</span> and <span className={`${!theme?"text-[#064789]":"text-[#EBF2FA]"} font-bold`}>Tailwind CSS</span> . Passionate about crafting visually stunning and responsive user interfaces. Skilled in component-based architecture, state management <span className={`${!theme?"text-[#064789]":"text-[#EBF2FA]"} font-bold`}>(Redux or Zustand)</span>, and <span className={`${!theme?"text-[#064789]":"text-[#EBF2FA]"} font-bold`}>API integration</span>. Let's collaborate to bring innovative and seamless digital experiences to life! 💻✨</Paragraph>
       <div className='lg:grid grid-cols-2 gap-20 content-center justify-items-center'>
         <div className='w-full'>
         <Heading>Work Experience</Heading>

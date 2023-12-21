@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph'
+import ThemeContext from '../context/ThemeContext'
 
 const TechStack = () => {
+  const {theme} = useContext(ThemeContext)
+
   return (
-    <div className='lg:px-24 px-5'>
+    <div className={`lg:px-24 px-5 ${theme?"bg-[#064789]":"bg-[#EBF2FA]"}`}>
       <Heading>My Tech Stack</Heading>
       <Paragraph> Technologies I’ve been working with recently</Paragraph>
-      <div className='flex flex-wrap justify-center items-center gap-10 gap-x-36  w-3/5 mx-auto'>
+      <div className='flex flex-wrap justify-center items-center gap-10 gap-x-36  w-4/5 mx-auto'>
         <div className=''>
           <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
           <path d="M22.1325 102.004L13.7063 7.5H106.294L97.8563 101.989L59.9438 112.5L22.1325 102.004Z" fill="#E44F26"/>

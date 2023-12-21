@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import ThemeContext from '../context/ThemeContext'
 
 const Heading = ({children, className}) => {
+  const {theme} = useContext(ThemeContext)
+  
   return (
-    <h2 className={`text-[#064789] font-bold text-[42px] mt-10 ${className}`}>{children}</h2>
+    <h2 className={`${!theme?"text-[#064789]":"text-white"} font-bold text-[42px] pt-10 ${className}`}>{children}</h2>
   )
 }
 

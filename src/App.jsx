@@ -7,11 +7,13 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import TechStack from './pages/TechStack'
+import ThemeContextProvider from './context/ThemeContextProvider'
 
 function App() {
 
   return (
     <>
+    <ThemeContextProvider>
      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout/>}>
@@ -23,6 +25,7 @@ function App() {
         </Route>
       </Routes>
      </BrowserRouter>
+     </ThemeContextProvider>
     </>
   )
 }
